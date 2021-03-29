@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	http.ListenAndServe(":8000", nil)
 	route.CarregaRotas()
+	http.ListenAndServe(":8000", nil)
 }

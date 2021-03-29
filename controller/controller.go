@@ -10,6 +10,10 @@ import (
 
 var templateMap = template.Must(template.ParseGlob("templates/*.html"))
 
+func Teste(writer http.ResponseWriter, request *http.Request) {
+	println("Teste")
+}
+
 func Index(writer http.ResponseWriter, request *http.Request) {
 	produtos, err := dao.ListarTodosOsProdutos()
 
